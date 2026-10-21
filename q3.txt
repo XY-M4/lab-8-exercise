@@ -1,0 +1,3 @@
+Ans1: I would move mTransform into a separate component because position and scale are not only used by sprites. Other game objects can also use this component, making it more reusable in an ECS system.
+
+Ans2: We need to draw the sprites in the correct order, starting from the back and moving to the front. This is because alpha blending depends on the drawing order, so changing the order can change the final colours.
